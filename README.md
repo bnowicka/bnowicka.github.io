@@ -1,2 +1,2 @@
 # bnowicka.github.io
-moja strona
+Stronka testowa na potrzeby zajeć na uczelni
