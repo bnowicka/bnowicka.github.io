@@ -18,8 +18,13 @@
 	    		</ul>
 	</nav>
 	<br>
+	
+	
+	
+	
+	
 	<div id="map" style="max-width: 100%; height:300px;margin-top:30px;margin-bottom:10px;"></div>
-                  <script>
+        <script>
                      var map = L.map('map').setView([54.396355, 18.573598], 15);
                       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}, {maxZoom: 18,}).addTo(map);
@@ -29,18 +34,21 @@
                       marker.bindPopup("<b>Uniwersytet Gdanski</b><br>Bazynskiego 1A, Gdansk</br>").openPopup();
                       
                         for (var i = 1; i < localStorage.length; i=i+2) {
-	console.log(localStorage.getItem(i)+" "+localStorage.getItem(i+1));
-	L.marker([localStorage.getItem(i),localStorage.getItem(i+1)]).bindPopup("Punkt: " + (i+1)/2).addTo(map);
-}
-function onMapClick(e) {
-	localStorage.setItem(localStorage.length+1, e.latlng.lat);
-	localStorage.setItem(localStorage.length+1, e.latlng.lng);
-	console.log(localStorage.getItem(localStorage.length-1));
-	console.log(localStorage.getItem(localStorage.length));
-	location.reload();
-}
-map.on('click', onMapClick);
-                  </script>
+				console.log(localStorage.getItem(i)+" "+localStorage.getItem(i+1));
+				L.marker([localStorage.getItem(i),localStorage.getItem(i+1)]).bindPopup("Punkt: " + (i+1)/2).addTo(map);
+			}
+			function onMapClick(e) {
+				localStorage.setItem(localStorage.length+1, e.latlng.lat);
+				localStorage.setItem(localStorage.length+1, e.latlng.lng);
+				console.log(localStorage.getItem(localStorage.length-1));
+				console.log(localStorage.getItem(localStorage.length));
+				location.reload();
+			}
+			map.on('click', onMapClick);
+        </script>
+
+
+
 
 	</body>
 </html>
