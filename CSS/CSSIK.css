@@ -1,7 +1,11 @@
-body {
+html, body {
     margin: 10px;
+    height: 90%;
+    padding: 5px
     background-color: black;
 }
+
+      
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -43,8 +47,4 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-html, body, #map-canvas {
-        height: 90%;
-        margin: 5px;
-        padding: 5px
-}
+
