@@ -26,8 +26,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1,h2 {
+h1 {
     font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    color: red;
+}
+h2 {
+    font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
     color: red;
