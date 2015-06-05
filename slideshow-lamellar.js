@@ -70,7 +70,7 @@ function openlamellar() {
 
 function getcontent() {
     content="<a href='"+pictures[i_picture].url+"' target='"+target_url+"'>";
-    content+="<img src="+pictures[i_picture].src+" border=0 width=100 height=100>";
+    content+="<img src="+pictures[i_picture].src+" border=0 width=500 height=500>";
     content+="</a><div class='messagestyle' style='width:"+slideshow_width+"px;height:"+message_height+"px;'>"+pictures[i_picture].msg+"</div>";
 }
 
