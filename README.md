@@ -1,2 +1,2 @@
 # bnowicka.github.io
-Stronka testowa na potrzeby zajeć na uczelni
+Stronka testowa o judo na potrzeby zajeć na uczelni
