@@ -81,7 +81,70 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	    		</ul>
 	</nav>
 	<br>
-	
+	<script>
+// CREDITS:
+// Slideshow with with lamellar effect
+// by Peter Gehrig
+// Copyright (c) 2010 Peter Gehrig. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.fabulant.com
+// 03/01/2010
+
+// IMPORTANT:
+// If you add this script to a script-library or script-archive
+// you have to add a link to http://www.fabulant.com on the webpage
+// where this script will be running.
+
+// CONFIGURATION:
+// Go to http://www.fabulant.com and get the original code
+// with step-by-step instructions and copy-and-paste installation.
+
+// your pictures. Add as many pictures a you like. In this case the pictures are in the same directory as the HTML-file.
+
+var pictures = [
+    { src : '/submitted-scripts/slideshow-lamellar/images/image1_big.jpg',
+      msg : 'Picture from a Norwegian island',
+      url : 'http://www.dhtmlgoodies.com'
+    },
+    { src : '/submitted-scripts/slideshow-lamellar/images/image2_big.jpg',
+        msg : 'Gokart is fun',
+        url : 'http://www.dhtmlgoodies.com'
+    },
+    { src : '/submitted-scripts/slideshow-lamellar/images/image3_big.jpg',
+        msg : 'Gokart is fun',
+        url : 'http://www.dhtmlgoodies.com'
+    },
+    { src : '/submitted-scripts/slideshow-lamellar/images/image4_big.jpg',
+        msg : 'Me at the keyboard',
+        url : 'http://www.dhtmlgoodies.com'
+    },
+    { src : '/submitted-scripts/slideshow-lamellar/images/image6_big.jpg',
+        msg : 'My chess set',
+        url : '#'
+    }
+]
+
+// target of the picture-links ("_blank", "_top", "_self", "_parent" or "nameOfYourFrame")
+var target_url="_blank";
+
+// number of lamellas.
+var x_slices=8;
+
+// width of slideshow
+var slideshow_width=400;
+
+// height of slideshow
+var slideshow_height=320;
+
+// height of messagebox
+var message_height=17;
+
+// pause beween the pictures (seconds)
+var pause=1.5;
+// - End of JavaScript - -->
+</script>
+<script src="/submitted-scripts/slideshow-lamellar/js/slideshow-lamellar.js"></script>
+
 	<br>
 	<h2>Mapka wycentrowana na uczelne.</h2>
 	<div id="map-canvas" style="max-width: 98%; height:320px; margin-top:20px ; margin-bottom: 10px;"></div>
