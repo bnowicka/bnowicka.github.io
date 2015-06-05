@@ -57,3 +57,15 @@ ul.posts li {
     list-style: none;
 }
 
+.messagestyle{
+  font-family:Arial;
+  font-size:11px;
+  color:white;
+  background-color:#888888;
+  text-align:center;
+  position:absolute;
+  bottom:0px;
+  vertical-align:middle;
+  margin:0px;
+}
+
